@@ -2,7 +2,7 @@ using Shouldly;
 
 namespace AOCDay1.Tests;
 
-public class UnitTest1
+public class Day1Tests
 {
     [Theory]
     [InlineData("zlmlk1", 11)]
@@ -17,7 +17,7 @@ public class UnitTest1
     [InlineData("zoneight234", 14)]
     [InlineData("7pqrstsixteen", 76)]
     [InlineData("248twofbkfpxtheightwovng", 22)]
-    public void Test1(string line, int expected)
+    public void Day1(string line, int expected)
     {
         Calibration.GetValue2(line).ShouldBe(expected);
     }
@@ -35,7 +35,7 @@ public class UnitTest1
     [InlineData("zoneight234", 14)]
     [InlineData("7pqrstsixteen", 76)]
     [InlineData("248twofbkfpxtheightwovng", 22)]
-    public void Test2a(string line, int expected)
+    public void Day1Part2(string line, int expected)
     {
         Calibration.GetValue2a(line).ShouldBe(expected);
     }
