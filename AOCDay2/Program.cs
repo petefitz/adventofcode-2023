@@ -4,6 +4,14 @@
     {
         var allGames = GameDataReader.Read("data.txt");
 
+        Part1(allGames);
+        Part2(allGames);
+
+        Console.WriteLine("Hello, World!");
+    }
+
+    private static void Part1(GameData[] allGames)
+    {
         int sum = 0;
         foreach (var game in allGames)
         {
@@ -15,7 +23,17 @@
         }
 
         Console.WriteLine(sum);
-        Console.WriteLine("Hello, World!");
+    }
+
+    private static void Part2(GameData[] allGames)
+    {
+        int sum = 0;
+        foreach (var game in allGames)
+        {
+            sum += GameDataBuilder.MinimumCube(game);
+        }
+
+        Console.WriteLine(sum);
     }
 }
 
@@ -42,6 +60,15 @@ public static class GameDataBuilder
     public static bool IsValid(GameData gameData)
     {
         return gameData.Colours.All(c => c.red <= 12 && c.green <= 13 && c.blue <= 14);
+    }
+
+    public static int MinimumCube(GameData gameData)
+    {
+        var maxRed = gameData.Colours.Select(g => g.red).Max();
+        var maxGreen = gameData.Colours.Select(g => g.green).Max();
+        var maxBlue = gameData.Colours.Select(g => g.blue).Max();
+
+        return maxRed * maxGreen * maxBlue;
     }
 }
 
