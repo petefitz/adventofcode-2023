@@ -62,4 +62,26 @@ public class Day3Tests
         data.FindResultPart1().ShouldBe(4361);
 
     }
+
+    [Fact]
+    public void NextToGear()
+    {
+        var data = new GameData
+        {
+            Cells = new[] {
+                "467..114..",
+                "...*......",
+                "..35..633.",
+                "......#...",
+                "617*......",
+                ".....+.58.",
+                "..592.....",
+                "......755.",
+                "...$.*....",
+                ".664.598.."}
+        };
+
+        data.FindResultPart2().ShouldBe(467835);
+
+    }
 }
