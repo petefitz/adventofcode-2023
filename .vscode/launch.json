@@ -4,6 +4,14 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+
+        {
+            "name": "C#: Day3 Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/AOCDay3/AOCDay3.csproj"
+        },
         {
             "name": "C#: Day2 Debug",
             "type": "dotnet",

@@ -1,4 +1,5 @@
-﻿internal class Program
+﻿namespace AdventOfCode.Day2;
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -75,7 +76,7 @@ public static class GameDataBuilder
 public class GameData
 {
     public int GameNumber { get; set; }
-    public ColourData[] Colours { get; set; }
+    public ColourData[] Colours { get; set; } = Array.Empty<ColourData>();
 }
 
 public class ColourData

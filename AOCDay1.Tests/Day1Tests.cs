@@ -1,3 +1,4 @@
+using AdventOfCode.Day1;
 using Shouldly;
 
 namespace AOCDay1.Tests;
