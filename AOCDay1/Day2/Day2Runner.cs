@@ -1,9 +1,10 @@
 ﻿namespace AdventOfCode.Day2;
-internal class Program
+
+public static class Day2Runner
 {
-    private static void Main(string[] args)
+    public static void Parts1and2()
     {
-        var allGames = GameDataReader.Read("data.txt");
+        var allGames = GameDataReader.Read("data/day2/data.txt");
 
         Part1(allGames);
         Part2(allGames);

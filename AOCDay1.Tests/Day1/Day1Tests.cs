@@ -1,7 +1,6 @@
-using AdventOfCode.Day1;
 using Shouldly;
 
-namespace AOCDay1.Tests;
+namespace AdventOfCode.Day1.Tests;
 
 public class Day1Tests
 {

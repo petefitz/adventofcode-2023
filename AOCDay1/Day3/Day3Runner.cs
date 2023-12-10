@@ -2,11 +2,12 @@
 
 namespace AdventOfCode.Day3;
 
-internal class Program
+public static class Day3Runner
 {
-    private static void Main(string[] args)
+    public static void Parts1and2()
     {
-        var allLines = GameDataReader.Read("data.txt");
+        var allLines = GameDataReader.Read("data/day3/data.txt");
+
         Console.WriteLine("Part 1");
         Console.WriteLine(allLines.FindResultPart1());
         Console.WriteLine("Part 2");
